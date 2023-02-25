@@ -105,9 +105,9 @@ psql -h localhost -U postgres
 
 
 ## Docker Login
-```sh
+```
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker login
-Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to xxxxx to create one.
 Username: oewete
 Password: 
 WARNING! Your password will be stored unencrypted in /home/gitpod/.docker/config.json.
@@ -119,12 +119,13 @@ Login Succeeded
 
 ## Docker Tag
 
-```sh
+```
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker tag aws-bootcamp-cruddur-2023-backend-flask oewete/cruddur-backend-flask:1.0
 ```
 
 ## Docker Push
-```sh
+
+```
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker push oewete/cruddur-backend-flask:1.0
 The push refers to repository [docker.io/oewete/cruddur-backend-flask]
 0c0a75948e28: Pushed 
@@ -139,10 +140,20 @@ e298d729bcf5: Pushed
 1.0: digest: sha256:7f0f0c5fcf91a279eb0c6e57b5bc2bc65d137ce332a24ab2ec503cd26489d07e size: 2203
 ```
 
+#### 4. Verify in GUI that the image was indeed pushed
+![Dockerhub]()
+
+
+#### 5. Deleting the Docker Hub credentials from the ~/.docker/config.json
+```sh
+docker logout
+```
 
 ## MSB
-```sh
+
+```
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker images aws-bootcamp-cruddur-2023-backend-flask
 REPOSITORY                                TAG       IMAGE ID       CREATED          SIZE
 aws-bootcamp-cruddur-2023-backend-flask   latest    79e8f320418c   54 minutes ago   129MB
 ```
+
