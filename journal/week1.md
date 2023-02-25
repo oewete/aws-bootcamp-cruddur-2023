@@ -89,10 +89,7 @@ docker-compose up
 
 
 Used the "TablePlus" installed on Mac to connect to Postgres:
-
-
-Can see the standard tables:
-
+![TablePlus GUI](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/101ecf8731342be7e4fe4131b7ede358b5767b07/_docs/assets/week1/tableplus-gui.png)
 
 
 Tried connecting via CLI client:
@@ -101,13 +98,14 @@ sudo apt-get install -y postgresql-client
 psql -h localhost -U postgres
 ```
 
-
+![Postgres CLI](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/101ecf8731342be7e4fe4131b7ede358b5767b07/_docs/assets/week1/postgres-cli.png)
 
 
 
 
 
 ## Docker Login
+```sh
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker login
 Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
 Username: oewete
@@ -117,13 +115,16 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
 Login Succeeded
+```
 
-##Docker Tag
+## Docker Tag
 
+```sh
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker tag aws-bootcamp-cruddur-2023-backend-flask oewete/cruddur-backend-flask:1.0
+```
 
-
-##Docker Push
+## Docker Push
+```sh
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker push oewete/cruddur-backend-flask:1.0
 The push refers to repository [docker.io/oewete/cruddur-backend-flask]
 0c0a75948e28: Pushed 
@@ -136,11 +137,12 @@ e298d729bcf5: Pushed
 8d60832b730a: Mounted from library/python 
 63b3cf45ece8: Mounted from library/python 
 1.0: digest: sha256:7f0f0c5fcf91a279eb0c6e57b5bc2bc65d137ce332a24ab2ec503cd26489d07e size: 2203
+```
 
 
-
-##MSB
-
+## MSB
+```sh
 gitpod /workspace/aws-bootcamp-cruddur-2023 (main) $ docker images aws-bootcamp-cruddur-2023-backend-flask
 REPOSITORY                                TAG       IMAGE ID       CREATED          SIZE
 aws-bootcamp-cruddur-2023-backend-flask   latest    79e8f320418c   54 minutes ago   129MB
+```
