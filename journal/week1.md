@@ -101,6 +101,22 @@ psql -h localhost -U postgres
 ![Postgres CLI](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/101ecf8731342be7e4fe4131b7ede358b5767b07/_docs/assets/week1/postgres-cli.png)
 
 
+## Homework Challenges
+### Run the Dockerfile CMD as an external script
+1. Created `run_flask.sh`
+```bash
+#!/bin/bash
+python3 -m flash run --host=0.0.0.0 --port=4567
+```
+2. Built the container
+```sh
+docker build -t backend-flask ./backend-flask
+```
+3. Ran the container
+```sh
+docker run -d --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
+```
+[Link to commit]()
 
 
 
@@ -140,8 +156,8 @@ e298d729bcf5: Pushed
 1.0: digest: sha256:7f0f0c5fcf91a279eb0c6e57b5bc2bc65d137ce332a24ab2ec503cd26489d07e size: 2203
 ```
 
-#### 4. Verify in GUI that the image was indeed pushed
-![Dockerhub]()
+## Verify Docker image was pushed to Dockerhub
+![Dockerhub](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/36bbf8766702108fd3f92a7be0c5c9f6c9dfb356/_docs/assets/week1/dockerhub.png)
 
 
 #### 5. Deleting the Docker Hub credentials from the ~/.docker/config.json
