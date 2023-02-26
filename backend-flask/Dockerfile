@@ -1,4 +1,6 @@
-FROM python:3.10-slim-buster
+# Stage 1: Build the application
+
+FROM python:3.10-slim-buster as builder
 
 WORKDIR /backend-flask
 
@@ -7,7 +9,16 @@ RUN pip3 install --user --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Stage 2: Run the application
+
+FROM python:3.10-slim-buster
+
+WORKDIR /backend-flask
+
+COPY --from=builder /root/.local /root/.local
 ENV PATH=/root/.local/bin:$PATH
+
+
 COPY run_flask.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/run_flask.sh
 
