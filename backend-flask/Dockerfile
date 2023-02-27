@@ -26,4 +26,4 @@ ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
 
-CMD [ "/usr/local/bin/run_flash.sh"]
+CMD [ "/usr/local/bin/run_flask.sh"]
