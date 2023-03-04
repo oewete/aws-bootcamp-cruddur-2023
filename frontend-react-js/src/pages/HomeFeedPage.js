@@ -10,6 +10,23 @@ import ReplyForm from '../components/ReplyForm';
 // [TODO] Authenication
 import Cookies from 'js-cookie'
 
+import { trace, context, } from '@opentelemetry/api';
+
+const tracer = trace.getTracer();
+
+const rootSpan = tracer.startActiveSpan('document_load', span => {
+  //start span when navigating to page
+  span.setAttribute('pageUrlwindow', window.location.href);
+  window.onload = (event) => {
+    // ... do loading things
+    // ... attach timing information
+    span.end(); //once page is loaded, end the span
+  };
+
+  }
+);
+
+
 export default function HomeFeedPage() {
   const [activities, setActivities] = React.useState([]);
   const [popped, setPopped] = React.useState(false);
