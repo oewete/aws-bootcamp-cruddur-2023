@@ -24,7 +24,7 @@
 [commit link](https://github.com/oewete/aws-bootcamp-cruddur-2023/commit/89bb6a23bf32f910b544f1b551e02d3942d787c70)
 
 ### Verification
-![honeycomb](_docs/assets/honeycomb.png)
+![honeycomb](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/6dccb501ebbf1422cb0fc6ca22d24e5dda4192f8/_docs/assets/honeycomb.png)
 
 
 ## Instrumenting the frontend
