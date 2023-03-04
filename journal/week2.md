@@ -36,3 +36,4 @@ npm install --save \
     @opentelemetry/exporter-trace-otlp-http \
     @opentelemetry/context-zone
 ```
+[commit link](https://github.com/oewete/aws-bootcamp-cruddur-2023/commit/6dccb501ebbf1422cb0fc6ca22d24e5dda4192f8)
