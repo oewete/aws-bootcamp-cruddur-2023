@@ -5,8 +5,8 @@
 
 
 #### Summary
-![Cruddr User Pool](week3/cruddur-user-pool1.png)
-![Cruddr User Pool](week3/cruddur-user-pool2.png)
+![Cruddr User Pool](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/c22b1dbc9bc83b2e8443422cc1794d9c26d5f8c3/_docs/assets/week3/cruddur-user-pool1.png)
+![Cruddr User Pool](https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/c22b1dbc9bc83b2e8443422cc1794d9c26d5f8c3/_docs/assets/week3/cruddur-user-pool2.png)
 
 
 ### Installing AWS Amplify Library
