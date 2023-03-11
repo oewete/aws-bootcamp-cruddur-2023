@@ -193,7 +193,7 @@ aws cognito-idp admin-set-user-password --username fafbc35a-08cc-4af5-8d9b-2ca35
 ```
 
 ##Confirm User
-<img width="815" alt="Confirmed user in AWS Cognito" src="https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/c22b1dbc9bc83b2e8443422cc1794d9c26d5f8c3/_docs/assets/week3/cruddur-confirmed-user.png">
+<img width="815" alt="Confirmed user in AWS Cognito" src="https://github.com/oewete/aws-bootcamp-cruddur-2023/blob/5dab741b4e5390b4cbee38561b2abba5fba4a2f7/_docs/assets/week3/cruddur-confirmed-user.png">
 
 
 
