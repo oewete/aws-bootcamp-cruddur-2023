@@ -20,4 +20,4 @@ fi
 
 echo URL
 
-psql $CONNECTION_URL cruddur < $seed
+psql $URL cruddur < $seed
