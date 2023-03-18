@@ -65,4 +65,4 @@ class CreateActivity:
       "{expires_at}"
     )
     """
-    #query_commit(sql)
+    query_commit(sql)
